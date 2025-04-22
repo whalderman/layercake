@@ -1,20 +1,20 @@
 /* globals describe it */
-import * as assert from 'assert';
 import {
-	scaleLinear,
-	scaleTime,
-	scaleLog,
-	scalePow,
-	scaleSqrt,
-	scaleSymlog,
-	scaleOrdinal,
 	scaleBand,
+	scaleLinear,
+	scaleLog,
+	scaleOrdinal,
 	scalePoint,
-	scaleThreshold,
+	scalePow,
 	scaleQuantile,
 	scaleQuantize,
-	scaleSequentialQuantile
+	scaleSequentialQuantile,
+	scaleSqrt,
+	scaleSymlog,
+	scaleThreshold,
+	scaleTime
 } from 'd3-scale';
+import * as assert from 'node:assert';
 
 import fn from '../src/lib/utils/padScale.js';
 

@@ -1,5 +1,5 @@
 /* globals describe it */
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import fn from '../src/lib/utils/makeAccessor.js';
 
 const name = 'makeAccessor';

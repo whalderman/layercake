@@ -1,14 +1,14 @@
 <script>
 	import hljs from 'highlight.js';
+	import hljsDefineSvelte from '../_modules/hljsDefineSvelte.js';
 	import examples from './_examples.js';
 	import examplesSsr from './_examples_ssr.js';
-	import hljsDefineSvelte from '../_modules/hljsDefineSvelte.js';
 
 	hljs.registerLanguage('svelte', hljsDefineSvelte);
 
 	hljsDefineSvelte(hljs);
 
-	const codeExample = `<scr${''}ipt>
+	const codeExample = `<script>
 	// The library provides a main wrapper component
 	// and a bunch empty layout components...
 	import { LayerCake, Svg, Html, Canvas } from 'layercake';
@@ -16,21 +16,21 @@
 	// ...that you fill with your own chart components,
 	// that live inside your project and which you
 	// can copy and paste from here as starting points.
-	im${''}port AxisX f${''}rom './components/AxisX.svelte';
-  im${''}port AxisY f${''}rom './components/AxisY.svelte';
-  im${''}port Line f${''}rom './components/Line.svelte';
-  im${''}port Scatter f${''}rom './components/Scatter.svelte';
-  im${''}port Labels f${''}rom './components/Labels.svelte';
+	import AxisX from './components/AxisX.svelte';
+	import AxisY from './components/AxisY.svelte';
+	import Line from './components/Line.svelte';
+	import Scatter from './components/Scatter.svelte';
+	import Labels from './components/Labels.svelte';
 
 	const data = [{ x: 0, y: 1 }, { x: 1, y: 2 }, { x: 2, y: 3 }];
-</scr${''}ipt>
+</scr${/* avoid breaking the LSP */ ''}ipt>
 
-<sty${''}le>
+<style>
 	.chart-container {
 		width: 100%;
 		height: 500px;
 	}
-</sty${''}le>
+</style>
 
 <div class="chart-container">
 	<LayerCake

@@ -1,6 +1,6 @@
 /* globals describe it */
-import * as assert from 'assert';
-import { stackOrderAscending, stackOffsetSilhouette } from 'd3-shape';
+import { stackOffsetSilhouette, stackOrderAscending } from 'd3-shape';
+import * as assert from 'node:assert';
 
 import fn from '../src/lib/lib/stack.js';
 

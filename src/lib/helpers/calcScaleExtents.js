@@ -1,6 +1,5 @@
-import calcUniques from '../lib/calcUniques.js';
 import calcExtents from '../lib/calcExtents.js';
-
+import calcUniques from '../lib/calcUniques.js';
 import isOrdinalDomain from './isOrdinalDomain.js';
 
 /* --------------------------------------------

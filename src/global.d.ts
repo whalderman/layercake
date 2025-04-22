@@ -1,3 +1,7 @@
 /// <reference types="@sveltejs/kit" />
 
-declare module '*.csv';
+declare module "*.csv";
+
+namespace LayerCake {
+	interface Annotation {}
+}

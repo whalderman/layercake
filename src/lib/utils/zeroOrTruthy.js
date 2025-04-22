@@ -3,7 +3,7 @@
 	@param {any} val The value to test.
 	@returns {any}
 */
-export default function canBeZero(val) {
+export function zeroOrTruthy(val) {
 	if (val === 0) {
 		return true;
 	}
